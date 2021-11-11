@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/diorama-pgm-sybrdebo/static/css/main.d5880afd.chunk.css",
-    "main.js": "/diorama-pgm-sybrdebo/static/js/main.7c5ac037.chunk.js",
-    "main.js.map": "/diorama-pgm-sybrdebo/static/js/main.7c5ac037.chunk.js.map",
-    "runtime-main.js": "/diorama-pgm-sybrdebo/static/js/runtime-main.f1b6475b.js",
-    "runtime-main.js.map": "/diorama-pgm-sybrdebo/static/js/runtime-main.f1b6475b.js.map",
-    "static/js/2.dcefafc1.chunk.js": "/diorama-pgm-sybrdebo/static/js/2.dcefafc1.chunk.js",
-    "static/js/2.dcefafc1.chunk.js.map": "/diorama-pgm-sybrdebo/static/js/2.dcefafc1.chunk.js.map",
-    "static/js/3.9dacb597.chunk.js": "/diorama-pgm-sybrdebo/static/js/3.9dacb597.chunk.js",
-    "static/js/3.9dacb597.chunk.js.map": "/diorama-pgm-sybrdebo/static/js/3.9dacb597.chunk.js.map",
+    "main.js": "/diorama-pgm-sybrdebo/static/js/main.bd3d86a3.chunk.js",
+    "main.js.map": "/diorama-pgm-sybrdebo/static/js/main.bd3d86a3.chunk.js.map",
+    "runtime-main.js": "/diorama-pgm-sybrdebo/static/js/runtime-main.aa9fcb4a.js",
+    "runtime-main.js.map": "/diorama-pgm-sybrdebo/static/js/runtime-main.aa9fcb4a.js.map",
+    "static/js/2.69eec5d9.chunk.js": "/diorama-pgm-sybrdebo/static/js/2.69eec5d9.chunk.js",
+    "static/js/2.69eec5d9.chunk.js.map": "/diorama-pgm-sybrdebo/static/js/2.69eec5d9.chunk.js.map",
+    "static/js/3.c6e205e0.chunk.js": "/diorama-pgm-sybrdebo/static/js/3.c6e205e0.chunk.js",
+    "static/js/3.c6e205e0.chunk.js.map": "/diorama-pgm-sybrdebo/static/js/3.c6e205e0.chunk.js.map",
     "index.html": "/diorama-pgm-sybrdebo/index.html",
     "static/css/main.d5880afd.chunk.css.map": "/diorama-pgm-sybrdebo/static/css/main.d5880afd.chunk.css.map",
-    "static/js/2.dcefafc1.chunk.js.LICENSE.txt": "/diorama-pgm-sybrdebo/static/js/2.dcefafc1.chunk.js.LICENSE.txt",
+    "static/js/2.69eec5d9.chunk.js.LICENSE.txt": "/diorama-pgm-sybrdebo/static/js/2.69eec5d9.chunk.js.LICENSE.txt",
     "static/media/arms.52637c1b.glb": "/diorama-pgm-sybrdebo/static/media/arms.52637c1b.glb",
     "static/media/coffin.288baebf.glb": "/diorama-pgm-sybrdebo/static/media/coffin.288baebf.glb",
     "static/media/fence.ada9104f.glb": "/diorama-pgm-sybrdebo/static/media/fence.ada9104f.glb",
@@ -24,9 +24,9 @@
     "static/media/tree.fd523acb.glb": "/diorama-pgm-sybrdebo/static/media/tree.fd523acb.glb"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1b6475b.js",
-    "static/js/2.dcefafc1.chunk.js",
+    "static/js/runtime-main.aa9fcb4a.js",
+    "static/js/2.69eec5d9.chunk.js",
     "static/css/main.d5880afd.chunk.css",
-    "static/js/main.7c5ac037.chunk.js"
+    "static/js/main.bd3d86a3.chunk.js"
   ]
 }
