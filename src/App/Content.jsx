@@ -5,10 +5,11 @@ import { useControls } from "leva";
 import Lighting from "./components/Lighting";
 import LightingGui from "./components/Lighting/indexGui";
 import Everything from "./components/Everything";
+
 import { useThree } from "@react-three/fiber";
 
 const components = [
-  "Everything"
+  "Everything", 
 ];
 
 const lightings = [
@@ -29,7 +30,7 @@ const Content = () => {
   });
 
   useThree(({ camera }) => {
-    camera.position.set(-2, -5, 10);
+    camera.position.set(-2, 10, 20);
   });
 
   const { showAxesHelper, showGridHelper, useComponent, useLighting } =
@@ -50,7 +51,7 @@ const Content = () => {
       useLighting: {
         label: "Lighting",
         options: lightings,
-        value: "LightingGui",
+        value: "Lighting",
       },
     });
 

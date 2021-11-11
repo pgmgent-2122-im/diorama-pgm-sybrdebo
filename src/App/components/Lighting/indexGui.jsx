@@ -23,50 +23,62 @@ const LightingGui = () => {
       label: "Intensity",
       max: 20,
       min: 0,
-      value: 0.1,
+      value: 0.2,
     },
     directionalLightPosition: { label: "Position XYZ", value: { x: 0, y:17, z: -29 } },
   });
-  const { pointLightColor, pointLightIntensity, pointLightPosition } =
+  const { pointLightColor, pointLightIntensity, pointLightPosition, pointLightDistance, pointLightdecay } =
     useControls("Lighting - Point Light", {
       pointLightColor: { label: "Color", value: "#FFA30A" },
-      pointLightIntensity: { label: "Intensity", max: 20, min: 0, value: 0.1 },
-      pointLightPosition: { label: "Position XYZ", value: { x: 5.8, y: 2.7, z: -2 } },
+      pointLightIntensity: { label: "Intensity", max: 20, min: 0, value: 1.5 },
+      pointLightPosition: { label: "Position XYZ", value: { x: 5.8, y: 2.9, z: -2 } },
+      pointLightDistance: {label: "Distance", value: 8},
+      pointLightdecay: {label: "Decay", value: 6}
     });
 
-    const { pointLight2Color, pointLight2Intensity, pointLight2Position } =
+    const { pointLight2Color, pointLight2Intensity, pointLight2Position,pointLight2Distance, pointLight2decay } =
     useControls("Lighting - Point Light2", {
       pointLight2Color: { label: "Color", value: "#FFA30A" },
-      pointLight2Intensity: { label: "Intensity", max: 20, min: 0, value: 0.1 },
-      pointLight2Position: { label: "Position XYZ", value: { x: 1.5, y: 2.5, z: -6.7 } },
+      pointLight2Intensity: { label: "Intensity", max: 20, min: 0, value: 1.5 },
+      pointLight2Position: { label: "Position XYZ", value: { x: 1.5, y: 2.9, z: -6.6 } },
+      pointLight2Distance: {label: "Distance", value: 8},
+      pointLight2decay: {label: "Decay", value: 6}
     });
 
-    const { pointLight3Color, pointLight3Intensity, pointLight3Position } =
+    const { pointLight3Color, pointLight3Intensity, pointLight3Position,pointLight3Distance, pointLight3decay } =
     useControls("Lighting - Point Light3", {
       pointLight3Color: { label: "Color", value: "#FFA30A" },
-      pointLight3Intensity: { label: "Intensity", max: 20, min: 0, value: 0.1 },
-      pointLight3Position: { label: "Position XYZ", value: { x: -5.8, y: 2.5, z: -3 } },
+      pointLight3Intensity: { label: "Intensity", max: 20, min: 0, value: 1.5 },
+      pointLight3Position: { label: "Position XYZ", value: { x: -5.8, y: 3.0, z: -2.8 } },
+      pointLight3Distance: {label: "Distance", value: 8},
+      pointLight3decay: {label: "Decay", value: 6}
     });
 
-    const { pointLight4Color, pointLight4Intensity, pointLight4Position } =
+    const { pointLight4Color, pointLight4Intensity, pointLight4Position, pointLight4Distance, pointLight4decay } =
     useControls("Lighting - Point Light4", {
       pointLight4Color: { label: "Color", value: "#FFA30A" },
-      pointLight4Intensity: { label: "Intensity", max: 20, min: 0, value: 0.1 },
-      pointLight4Position: { label: "Position XYZ", value: { x: -4.2, y: 2.5, z: -4.9 } },
+      pointLight4Intensity: { label: "Intensity", max: 20, min: 0, value: 1.5 },
+      pointLight4Position: { label: "Position XYZ", value: { x: -4.2, y: 3.0, z: -4.9 } },
+      pointLight4Distance: {label: "Distance", value: 8},
+      pointLight4decay: {label: "Decay", value: 6}
     });
 
-    const { pointLight5Color, pointLight5Intensity, pointLight5Position } =
+    const { pointLight5Color, pointLight5Intensity, pointLight5Position, pointLight5Distance, pointLight5decay } =
     useControls("Lighting - Point Light5", {
       pointLight5Color: { label: "Color", value: "#FFA30A" },
-      pointLight5Intensity: { label: "Intensity", max: 20, min: 0, value: 0.1 },
-      pointLight5Position: { label: "Position XYZ", value: { x: -8.7, y: 2.5, z: -8.3 } },
+      pointLight5Intensity: { label: "Intensity", max: 20, min: 0, value: 1.5 },
+      pointLight5Position: { label: "Position XYZ", value: { x: -8.7, y: 3.0, z: -8.3 } },
+      pointLight5Distance: {label: "Distance", value: 8},
+      pointLight5decay: {label: "Decay", value: 6}
     });
 
-    const { pointLight6Color, pointLight6Intensity, pointLight6Position } =
+    const { pointLight6Color, pointLight6Intensity, pointLight6Position, pointLight6Distance, pointLight6decay } =
     useControls("Lighting - Point Light6", {
       pointLight6Color: { label: "Color", value: "#FFA30A" },
-      pointLight6Intensity: { label: "Intensity", max: 20, min: 0, value: 0.1 },
-      pointLight6Position: { label: "Position XYZ", value: { x: 8.5, y: 2.5, z: -8.3 } },
+      pointLight6Intensity: { label: "Intensity", max: 20, min: 0, value: 1.5 },
+      pointLight6Position: { label: "Position XYZ", value: { x: 8.5, y: 2.9, z: -8.3 } },
+      pointLight6Distance: {label: "Distance", value: 8},
+      pointLight6decay: {label: "Decay", value: 6}
     });
 
   const {
@@ -77,7 +89,7 @@ const LightingGui = () => {
     spotLightTarget,
   } = useControls("Lighting - Spotlight", {
     spotLightColor: { label: "Color", value: "#0077ff" },
-    spotLightIntensity: { label: "Intensity", max: 20, min: 0, value: 0.1 },
+    spotLightIntensity: { label: "Intensity", max: 20, min: 0, value: 0.3 },
     spotLightPenumbra: { label: "Penumbra", value: 0.5 },
     spotLightPosition: { label: "Position XZ", value: { x: 0, y: 18, z: -40 } },
     spotLightTarget: { label: "Target XZ", value: { x: 0, y: 0, z: 0 } },
@@ -117,7 +129,7 @@ const LightingGui = () => {
     helperSize,
     directionalLightColor,
   );
-  useHelper(pointLightRef, PointLightHelper, helperSize, pointLightColor);
+  useHelper(pointLightRef, PointLightHelper, helperSize, pointLightColor, pointLightDistance, pointLightdecay);
   useHelper(pointLight2Ref, PointLightHelper, helperSize, pointLight2Color);
   useHelper(pointLight3Ref, PointLightHelper, helperSize, pointLight3Color);
   useHelper(pointLight4Ref, PointLightHelper, helperSize, pointLight4Color);
@@ -135,7 +147,7 @@ const LightingGui = () => {
 
   return (
     <>
-      <ambientLight color={0xffffff} intensity={0.1} />
+      <ambientLight color={0x014f94} intensity={0.08} />
       <directionalLight
         castShadow={true}
         color={directionalLightColor}
@@ -144,7 +156,8 @@ const LightingGui = () => {
         ref={directionalLightRef}
       />
       <pointLight
-        
+        distance={pointLightDistance}
+        decay={pointLightdecay}
         castShadow={true}
         color={pointLightColor}
         intensity={pointLightIntensity}
@@ -152,7 +165,8 @@ const LightingGui = () => {
         ref={pointLightRef}
       />
       <pointLight
-        
+        distance={pointLight2Distance}
+        decay={pointLight2decay}
         castShadow={true}
         color={pointLight2Color}
         intensity={pointLight2Intensity}
@@ -160,7 +174,8 @@ const LightingGui = () => {
         ref={pointLight2Ref}
       />
       <pointLight
-        
+        distance={pointLight3Distance}
+        decay={pointLight3decay}
         castShadow={true}
         color={pointLight3Color}
         intensity={pointLight3Intensity}
@@ -168,7 +183,8 @@ const LightingGui = () => {
         ref={pointLight3Ref}
       />
       <pointLight
-        
+        distance={pointLight4Distance}
+        decay={pointLight4decay}
         castShadow={true}
         color={pointLight4Color}
         intensity={pointLight4Intensity}
@@ -176,7 +192,8 @@ const LightingGui = () => {
         ref={pointLight4Ref}
       />
       <pointLight
-        
+        distance={pointLight5Distance}
+        decay={pointLight5decay}
         castShadow={true}
         color={pointLight5Color}
         intensity={pointLight5Intensity}
@@ -184,7 +201,8 @@ const LightingGui = () => {
         ref={pointLight5Ref}
       />
       <pointLight
-        
+        distance={pointLight6Distance}
+        decay={pointLight6decay}
         castShadow={true}
         color={pointLight6Color}
         intensity={pointLight6Intensity}
@@ -192,7 +210,7 @@ const LightingGui = () => {
         ref={pointLight6Ref}
       />
       <spotLight
-        angle={MathUtils.degToRad(15)}
+        angle={MathUtils.degToRad(25)}
         castShadow={true}
         color={spotLightColor}
         intensity={spotLightIntensity}

@@ -3,26 +3,76 @@ import { MathUtils } from "three";
 const Lighting = () => {
   return (
     <>
-      <ambientLight color={0x0077ff} intensity={0.1} />
-      <pointLight
+      <ambientLight color={0xffffff} intensity={0.07} />
+
+      <directionalLight
         castShadow={true}
-        color={0xffcc77}
-        intensity={0.5}
-        position={[-4, 1, -4]}
+        color="hsl(212, 100%, 50%)"
+        intensity={0.2}
+        position={[0, 17, 29]}
       />
-      {/* <spotLight
-        angle={MathUtils.degToRad(30)}
-        castShadow={true}
-        color={0xffcc77}
-        intensity={0.5}
-        penumbra={0.5}
-        position={[0, 4, 0]}
-      /> */}
+
       <pointLight
+        distance={8}
+        decay={6}
         castShadow={true}
-        color={0xffcc77}
-        intensity={0.5}
-        position={[4, 8, -4]}
+        color={0xffa30a}
+        intensity={1.5}
+        position={[5.8, 2.9, -2.0]}
+      />
+
+      <pointLight
+        distance={8}
+        decay={6}
+        castShadow={true}
+        color={0xffa30a}
+        intensity={1.5}
+        position={[1.5, 2.9, -6,6]}
+      />
+
+      <pointLight
+        distance={8}
+        decay={6}
+        castShadow={true}
+        color={0xffa30a}
+        intensity={1.5}
+        position={[-5.8, 3.0, -2.8]}
+      />
+
+      <pointLight
+        distance={8}
+        decay={6}
+        castShadow={true}
+        color={0xffa30a}
+        intensity={1.5}
+        position={[-4.2, 3.0, -4.9]}
+      />
+
+      <pointLight
+        distance={8}
+        decay={6}
+        castShadow={true}
+        color={0xffa30a}
+        intensity={1.5}
+        position={[-8.7, 3.0, -8.3]}
+      />
+
+      <pointLight
+        distance={8}
+        decay={6}
+        castShadow={true}
+        color={0xffa30a}
+        intensity={1.5}
+        position={[8.5, 2.9, -8.3]}
+      />
+
+      <spotLight
+        angle={MathUtils.degToRad(15)}
+        castShadow={true}
+        color={0x0077ff}
+        intensity={0.3}
+        penumbra={0.5}
+        position={[0, 18, -40]}
       />
     </>
   );
