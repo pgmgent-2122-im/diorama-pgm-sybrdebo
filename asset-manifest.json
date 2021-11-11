@@ -1,28 +1,32 @@
 {
   "files": {
     "main.css": "/diorama-pgm-sybrdebo/static/css/main.d5880afd.chunk.css",
-    "main.js": "/diorama-pgm-sybrdebo/static/js/main.f2613dd1.chunk.js",
-    "main.js.map": "/diorama-pgm-sybrdebo/static/js/main.f2613dd1.chunk.js.map",
-    "runtime-main.js": "/diorama-pgm-sybrdebo/static/js/runtime-main.5bd4e1bc.js",
-    "runtime-main.js.map": "/diorama-pgm-sybrdebo/static/js/runtime-main.5bd4e1bc.js.map",
-    "static/js/2.289b1476.chunk.js": "/diorama-pgm-sybrdebo/static/js/2.289b1476.chunk.js",
-    "static/js/2.289b1476.chunk.js.map": "/diorama-pgm-sybrdebo/static/js/2.289b1476.chunk.js.map",
-    "static/js/3.ff83dd69.chunk.js": "/diorama-pgm-sybrdebo/static/js/3.ff83dd69.chunk.js",
-    "static/js/3.ff83dd69.chunk.js.map": "/diorama-pgm-sybrdebo/static/js/3.ff83dd69.chunk.js.map",
+    "main.js": "/diorama-pgm-sybrdebo/static/js/main.7c5ac037.chunk.js",
+    "main.js.map": "/diorama-pgm-sybrdebo/static/js/main.7c5ac037.chunk.js.map",
+    "runtime-main.js": "/diorama-pgm-sybrdebo/static/js/runtime-main.f1b6475b.js",
+    "runtime-main.js.map": "/diorama-pgm-sybrdebo/static/js/runtime-main.f1b6475b.js.map",
+    "static/js/2.dcefafc1.chunk.js": "/diorama-pgm-sybrdebo/static/js/2.dcefafc1.chunk.js",
+    "static/js/2.dcefafc1.chunk.js.map": "/diorama-pgm-sybrdebo/static/js/2.dcefafc1.chunk.js.map",
+    "static/js/3.9dacb597.chunk.js": "/diorama-pgm-sybrdebo/static/js/3.9dacb597.chunk.js",
+    "static/js/3.9dacb597.chunk.js.map": "/diorama-pgm-sybrdebo/static/js/3.9dacb597.chunk.js.map",
     "index.html": "/diorama-pgm-sybrdebo/index.html",
     "static/css/main.d5880afd.chunk.css.map": "/diorama-pgm-sybrdebo/static/css/main.d5880afd.chunk.css.map",
-    "static/js/2.289b1476.chunk.js.LICENSE.txt": "/diorama-pgm-sybrdebo/static/js/2.289b1476.chunk.js.LICENSE.txt",
-    "static/media/Ground_Wet_Rocks_001_ambientOcclusion.68e01355.jpg": "/diorama-pgm-sybrdebo/static/media/Ground_Wet_Rocks_001_ambientOcclusion.68e01355.jpg",
-    "static/media/Ground_Wet_Rocks_001_basecolor.c1d1802e.jpg": "/diorama-pgm-sybrdebo/static/media/Ground_Wet_Rocks_001_basecolor.c1d1802e.jpg",
-    "static/media/Ground_Wet_Rocks_001_height.39275c2b.png": "/diorama-pgm-sybrdebo/static/media/Ground_Wet_Rocks_001_height.39275c2b.png",
-    "static/media/Ground_Wet_Rocks_001_normal.028c7e83.jpg": "/diorama-pgm-sybrdebo/static/media/Ground_Wet_Rocks_001_normal.028c7e83.jpg",
-    "static/media/Ground_Wet_Rocks_001_roughness.a0359dfe.jpg": "/diorama-pgm-sybrdebo/static/media/Ground_Wet_Rocks_001_roughness.a0359dfe.jpg",
-    "static/media/diorama.892ac444.glb": "/diorama-pgm-sybrdebo/static/media/diorama.892ac444.glb"
+    "static/js/2.dcefafc1.chunk.js.LICENSE.txt": "/diorama-pgm-sybrdebo/static/js/2.dcefafc1.chunk.js.LICENSE.txt",
+    "static/media/arms.52637c1b.glb": "/diorama-pgm-sybrdebo/static/media/arms.52637c1b.glb",
+    "static/media/coffin.288baebf.glb": "/diorama-pgm-sybrdebo/static/media/coffin.288baebf.glb",
+    "static/media/fence.ada9104f.glb": "/diorama-pgm-sybrdebo/static/media/fence.ada9104f.glb",
+    "static/media/grave.189c39cc.glb": "/diorama-pgm-sybrdebo/static/media/grave.189c39cc.glb",
+    "static/media/ground.957e629c.glb": "/diorama-pgm-sybrdebo/static/media/ground.957e629c.glb",
+    "static/media/house.1b476d98.glb": "/diorama-pgm-sybrdebo/static/media/house.1b476d98.glb",
+    "static/media/lamps.ff9d796f.glb": "/diorama-pgm-sybrdebo/static/media/lamps.ff9d796f.glb",
+    "static/media/pumpkins.61884a11.glb": "/diorama-pgm-sybrdebo/static/media/pumpkins.61884a11.glb",
+    "static/media/tombstones.9278fd59.glb": "/diorama-pgm-sybrdebo/static/media/tombstones.9278fd59.glb",
+    "static/media/tree.fd523acb.glb": "/diorama-pgm-sybrdebo/static/media/tree.fd523acb.glb"
   },
   "entrypoints": [
-    "static/js/runtime-main.5bd4e1bc.js",
-    "static/js/2.289b1476.chunk.js",
+    "static/js/runtime-main.f1b6475b.js",
+    "static/js/2.dcefafc1.chunk.js",
     "static/css/main.d5880afd.chunk.css",
-    "static/js/main.f2613dd1.chunk.js"
+    "static/js/main.7c5ac037.chunk.js"
   ]
 }
