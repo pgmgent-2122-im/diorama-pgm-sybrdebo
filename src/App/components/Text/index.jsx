@@ -1,11 +1,9 @@
 import { DoubleSide } from "three";
-import { Text, useMatcapTexture } from "@react-three/drei";
+import { Text} from "@react-three/drei";
 
-import MatCap from "../../lib/Matcap";
 import FontFamily from "../../lib/FontFamily";
 
 const Title = () => {
-  const [matcap] = useMatcapTexture(MatCap.id.GREEN, MatCap.size.XL);
 
   return (
     <> 

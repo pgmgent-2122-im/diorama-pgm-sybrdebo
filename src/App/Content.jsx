@@ -18,9 +18,6 @@ const lightings = [
 ];
 
 
-
-
-
 const Content = () => {
   const { showStats } = useControls("General", {
     showStats: {
