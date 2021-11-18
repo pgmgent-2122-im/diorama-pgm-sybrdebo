@@ -5,7 +5,6 @@ import {
   Object3D,
   PointLightHelper,
   SpotLightHelper,
-  // RectAreaLightHelper
 } from "three";
 import { useControls } from "leva";
 import { useHelper } from "@react-three/drei";
@@ -81,6 +80,15 @@ const LightingGui = () => {
       pointLight6decay: {label: "Decay", value: 6}
     });
 
+    const { pointLight7Color, pointLight7Intensity, pointLight7Position, pointLight7Distance, pointLight7decay } =
+    useControls("Lighting - Point Light7", {
+      pointLight7Color: { label: "Color", value: "#FFA30A" },
+      pointLight7Intensity: { label: "Intensity", max: 20, min: 0, value: 1.5 },
+      pointLight7Position: { label: "Position XYZ", value: { x: -6.2, y: 0.4, z: 5.7 } },
+      pointLight7Distance: {label: "Distance", value: 0},
+      pointLight7decay: {label: "Decay", value: 0}
+    });
+
   const {
     spotLightColor,
     spotLightIntensity,
@@ -95,19 +103,6 @@ const LightingGui = () => {
     spotLightTarget: { label: "Target XZ", value: { x: 0, y: 0, z: 0 } },
   });
 
-  // const { rectAreaLightColor, rectAreaLightIntensity, rectAreaLightPosition, rectAreaLightWidth, rectAreaLightHeight, rectAreaLightLookAt } =
-  //   useControls("Lighting - Point Light", {
-  //     rectAreaLightColor: { label: "Color", value: "#FFA30A" },
-  //     rectAreaLightIntensity: { label: "Intensity", max: 20, min: 0, value: 0.1 },
-  //     rectAreaLightPosition: { label: "Position XYZ", value: { x: 5.8, y: 2.7, z: -2 } },
-  //     rectAreaLightWidth: { label: "Width", value: 10, min: 0, max: 20 },
-  //     rectAreaLightHeight: { label: "Height", value: 10, min: 0, max: 20 },
-  //     rectAreaLightLookAt: { label: "Look At", value: { x: 5.8, y: 2.7, z: -2 } },
-  //   });
-
-
-
-
   const { scene } = useThree();
   const target = new Object3D();
   scene.add(target);
@@ -119,8 +114,8 @@ const LightingGui = () => {
   const pointLight4Ref = useRef();
   const pointLight5Ref = useRef();
   const pointLight6Ref = useRef();
+  const pointLight7Ref = useRef();
   const spotLightRef = useRef();
-  // const rectAreaLightRef = useRef();
   const helperSize = 0.5;
 
   useHelper(
@@ -135,9 +130,9 @@ const LightingGui = () => {
   useHelper(pointLight4Ref, PointLightHelper, helperSize, pointLight4Color);
   useHelper(pointLight5Ref, PointLightHelper, helperSize, pointLight5Color);
   useHelper(pointLight6Ref, PointLightHelper, helperSize, pointLight6Color);
+  useHelper(pointLight7Ref, PointLightHelper, helperSize, pointLight7Color);
 
   useHelper(spotLightRef, SpotLightHelper, spotLightColor);
-  // useHelper(rectAreaLightRef, RectAreaLightHelper, helperSize, rectAreaLightColor);
 
   useFrame(() => {
     target.translateX(spotLightTarget.x);
@@ -209,6 +204,15 @@ const LightingGui = () => {
         position={[pointLight6Position.x, pointLight6Position.y , pointLight6Position.z]}
         ref={pointLight6Ref}
       />
+      <pointLight
+        distance={pointLight7Distance}
+        decay={pointLight7decay}
+        castShadow={true}
+        color={pointLight7Color}
+        intensity={pointLight7Intensity}
+        position={[pointLight7Position.x, pointLight7Position.y , pointLight7Position.z]}
+        ref={pointLight7Ref}
+      />
       <spotLight
         angle={MathUtils.degToRad(25)}
         castShadow={true}
@@ -219,16 +223,6 @@ const LightingGui = () => {
         ref={spotLightRef}
         target={target}
       />
-
-      {/* <rectAreaLight
-        color={rectAreaLightColor}
-        intensity={rectAreaLightIntensity}
-        position={[rectAreaLightPosition.x, rectAreaLightPosition.y , rectAreaLightPosition.z]}
-        width = {rectAreaLightWidth}
-        height = {rectAreaLightHeight}
-        lookAt={[rectAreaLightPosition.x, rectAreaLightPosition.y , rectAreaLightPosition.z]}
-        ref={rectAreaLightRef}
-      /> */}
     </>
   );
 };

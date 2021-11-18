@@ -6,39 +6,39 @@ import house from './assets/house.glb';
 const House = () => {
   const { nodes, materials } = useGLTF(house);
 
-  const {
-    color,
-    emissive,
-    emissiveIntensity,
-    metalness,
-    refractionRatio,
-    roughness,
-    wireframe,
-  } = useControls("StandardMaterial", {
-    color: { label: "Color", value: "#ffffff" },
-    emissive: { label: "Emissive", value: "#656262" },
-    emissiveIntensity: {
-      label: "Emissive Intensity",
-      max: 5,
-      min: 0,
-      value: 0.5,
-    },
-    metalness: { label: "Metalness", max: 1, min: 0, value: 1 },
-    refractionRatio: {
-      label: "Refraction Ratio",
-      max: 2,
-      min: 0,
-      value: 0.56,
-    },
-    roughness: { label: "Roughness", max: 1, min: 0, value: 0.4 },
-    wireframe: { label: "Wireframe", value: false },
-  });
+  // const {
+  //   color,
+  //   emissive,
+  //   emissiveIntensity,
+  //   metalness,
+  //   refractionRatio,
+  //   roughness,
+  //   wireframe,
+  // } = useControls("StandardMaterial", {
+  //   color: { label: "Color", value: "#ffffff" },
+  //   emissive: { label: "Emissive", value: "#656262" },
+  //   emissiveIntensity: {
+  //     label: "Emissive Intensity",
+  //     max: 5,
+  //     min: 0,
+  //     value: 0.5,
+  //   },
+  //   metalness: { label: "Metalness", max: 1, min: 0, value: 1 },
+  //   refractionRatio: {
+  //     label: "Refraction Ratio",
+  //     max: 2,
+  //     min: 0,
+  //     value: 0.56,
+  //   },
+  //   roughness: { label: "Roughness", max: 1, min: 0, value: 0.4 },
+  //   wireframe: { label: "Wireframe", value: false },
+  // });
 
-  const { dithering, opacity, transparent } = useControls("Material", {
-    dithering: { label: "Dithering", value: false },
-    opacity: { label: "Opacity", max: 1, min: 0, value: 1 },
-    transparent: { label: "Transparent", value: false },
-  });
+  // const { dithering, opacity, transparent } = useControls("Material", {
+  //   dithering: { label: "Dithering", value: false },
+  //   opacity: { label: "Opacity", max: 1, min: 0, value: 1 },
+  //   transparent: { label: "Transparent", value: false },
+  // });
 
   return (
     <group dispose={null}>
@@ -1011,16 +1011,16 @@ const House = () => {
         scale={[0.08, 0.08, 0.08]}
       >
         <meshStandardMaterial
-          color={color}
-          emissive={emissive}
-          emissiveIntensity={emissiveIntensity}
-          dithering={dithering}
-          metalness={metalness}
-          opacity={opacity}
-          refractionRatio={refractionRatio}
-          roughness={roughness}
-          transparent={transparent}
-          wireframe={wireframe}
+          color={0xffffff}
+          emissive={0x656262}
+          emissiveIntensity={0.5}
+          dithering={false}
+          metalness={1}
+          opacity={1}
+          refractionRatio={0.56}
+          roughness={0.4}
+          transparent={false}
+          wireframe={false}
         />
       </mesh>
 
@@ -1032,16 +1032,16 @@ const House = () => {
         position={[5.11, 4.37, -3.23]}
         scale={[-0.05, -0.05, -0.05]}>
           <meshStandardMaterial
-          color={color}
-          emissive={emissive}
-          emissiveIntensity={emissiveIntensity}
-          dithering={dithering}
-          metalness={metalness}
-          opacity={opacity}
-          refractionRatio={refractionRatio}
-          roughness={roughness}
-          transparent={transparent}
-          wireframe={wireframe}
+          color={0xffffff}
+          emissive={0x656262}
+          emissiveIntensity={0.5}
+          dithering={false}
+          metalness={1}
+          opacity={1}
+          refractionRatio={0.56}
+          roughness={0.4}
+          transparent={false}
+          wireframe={false}
         />
       </mesh>
 

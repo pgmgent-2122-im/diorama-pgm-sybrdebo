@@ -66,6 +66,24 @@ const Lighting = () => {
         position={[8.5, 2.9, -8.3]}
       />
 
+      <pointLight
+        distance={8}
+        decay={1}
+        castShadow={true}
+        color={0xffa30a}
+        intensity={1.5}
+        position={[-6.2, 0.5, 5.7]}
+      />
+
+      <pointLight
+        distance={8}
+        decay={1}
+        castShadow={true}
+        color={0xffa30a}
+        intensity={1.5}
+        position={[-2.9, 0.5, 5.4]}
+      />
+
       <spotLight
         angle={MathUtils.degToRad(15)}
         castShadow={true}
